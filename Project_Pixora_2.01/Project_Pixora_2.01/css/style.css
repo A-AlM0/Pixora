@@ -1,0 +1,481 @@
+/* General Configration */
+
+:root {
+
+    --bs-bg-color: #f5f7fd;
+    --bs-standard-color: #211A1D;
+    --bs-prpl-color: #6320EE;
+    --bs-light-prpl-color: #8075FF;
+    --bs-general-color: #CAD5CA;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bs-bg-color) !important;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: white;
+    background: var(--bs-light-prpl-color);
+}
+
+/* .bg-body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/haotian3.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+} */
+
+.z_index {
+    z-index: 99999;
+}
+
+.nav-link:hover {
+    position: relative;
+    transform: scale(1.01);
+    transition: 90ms ease-in;
+    color: var(--bs-light-prpl-color) !important;
+}
+
+.btn {
+    color: white !important;
+    background-color: var(--bs-prpl-color) !important;
+}
+
+.btn:hover {
+    background-color: var(--bs-light-prpl-color) !important;
+}
+
+.prpl {
+    background-color: var(--bs-prpl-color) !important;
+}
+
+.prpl:hover {
+    background-color: var(--bs-light-prpl-color) !important;
+}
+
+/* .c {
+    color: var(--bs-bg-color);
+    background-color: var(--bs-light-prpl-color);
+} */
+
+/* Hero start */
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.col-img-main img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.col-img-main-2 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.width_cont {
+    max-width: 85%;
+}
+
+/* Hero end */
+
+/* Sub Hero start */
+
+.box1-sub {
+    background-color: #408cff;
+    border-top-left-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+}
+
+.box2-sub {
+    background-color: #f84d4d;
+    border-bottom-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+}
+
+.sub_hero {
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+    background-color: #2c275cf3;
+    overflow-x: hidden;
+}
+
+.text_sub {
+    padding: 1rem 10%;
+}
+
+.main_content {
+    top: 15vh;
+    position: relative;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5vh;
+    border-top-right-radius: 5vh;
+}
+
+.sub_card_info {
+    border-radius: 2vh;
+    color: #f5f7fd;
+    background-color: var(--bs-light-prpl-color);
+}
+
+.sub_card_img_col {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: auto;
+    max-height: 600px;
+    border-radius: 3vh;
+}
+
+.sub_card_img_col img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 3vh;
+
+}
+
+.text_sub_2 {
+    line-height: 2.1;
+    max-width: 400px;
+}
+
+.hidden {
+    position: relative;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden2 {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden3 {
+    position: relative;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.show3 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Sub Hero end */
+
+/* Explore CSS */
+
+.pix_post_card img {
+    height: 21rem;
+    width: 21rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.pix_post_card:hover img {
+    opacity: 90%;
+    transition: ease 144ms;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none !important;
+    background-color: #211a1d00 !important;
+}
+
+.side-nav a {
+    margin: 25px auto;
+    font-size: large;
+    color: #211A1D;
+    z-index: 1000;
+}
+
+.side-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 9999;
+    border-right: 1px solid #bebebe;
+}
+
+.side-nav-ex {
+    margin-left: 5%;
+    border-top: 1px solid #211a1d39;
+}
+
+.side-nav-2 {
+    margin-left: 5%;
+}
+
+.pixora_logo {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    height: 27px;
+    width: 27px;
+}
+
+.side-nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 40vh;
+    max-width: 100%;
+}
+
+.nav-sub-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 20;
+    margin: 300px auto !important;
+}
+
+.nav-sub-side,
+.upload-css {
+    margin: 10px;
+}
+
+.upload-link:hover {
+    transition: 244ms ease-out;
+    background-color: var(--bs-prpl-color);
+    color: #e4e8f3;
+}
+
+/* 
+.grid-gallery {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.grid-gallery .grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-gallery .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-gallery .grid-item:hover img {
+    transition: 144ms ease-out;
+    opacity: 90%;
+} */
+
+.sm-upload {
+    z-index: 999999;
+    position: fixed;
+    border-radius: 100%;
+    bottom: 50px;
+    left: 8vh;
+    background: rgb(0, 0, 0);
+    box-shadow: 0px 1px 5px#211A1D;
+    color: var(--bs-bg-color);
+}
+
+.sm-upload:hover a {
+    transition: 144ms ease-out;
+    color: var(--bs-light-prpl-color);
+}
+
+.sm-upload a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 100%;
+    height: 55px;
+    width: 30px;
+    color: var(--bs-bg-color);
+}
+
+/* Explore CSS End */
+
+/* Account CSS */
+
+.acc_avatar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 100%;
+    max-width: 120px;
+    min-height: 120px;
+    overflow: hidden;
+}
+
+.acc_avatar img {
+    object-fit: cover;
+}
+
+.img_container img {
+    width: 400%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.acc_top {
+    padding: 1rem 0%;
+    border-top: 1px solid #0000003d;
+}
+
+.account-info-css {
+    padding: 1rem 10% !important;
+}
+
+.links_acc:hover {
+    transition: 144ms ease-in;
+    color: var(--bs-light-prpl-color) !important;
+}
+
+/* Account CSS end */
+
+/*Upload page*/
+
+.slctFile {
+    position: relative;
+    padding: 10% 20%;
+    border-radius: 1vh;
+    color: var(--bs-bg-color);
+    background-color: var(--bs-light-prpl-color);
+}
+
+/*upload end*/
+
+/* Post details css */
+
+.img_container_2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 730px;
+    /* Increased the height */
+}
+
+.img_container_2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img_container_2 img:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+.like-btn {
+    padding: 1rem 1% !important;
+    border-radius: 100% !important;
+}
+
+.comment-section {
+    padding: 20px;
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+.acc_avatar_post {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 100%;
+    max-width: 70px;
+    min-height: 70px;
+    overflow: hidden;
+}
+
+
+.acc_avatar_post img {
+    object-fit: cover;
+}
+
+.like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.like-button.liked {
+    color: red;
+    /* Highlight the button if liked */
+}
+
+/*End Post*/
+
+
+/*About us*/
+
+.aboutUs-bg {
+    width: 100%;
+    height: 600px;
+}
+
+.aboutUs-bg img {
+    background-attachment: fixed;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.bouts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.bouts img {
+    border-radius: 50vh;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/*end about us*/
