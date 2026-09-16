@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pixora - Upload Post</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -15,8 +15,8 @@ session_start();
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="manifest" href="/PROJECT_PIXORA_2.01/manifest.json">
-        <meta name="theme-color" content="#007bff">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#007bff">
         
     <script defer src="js/bootstrap.bundle.min.js"></script>
     <script defer src="js/main.js"></script>

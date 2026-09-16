@@ -1,0 +1,27 @@
+# Environment & Sensitive Files
+.env
+*.env
+users credentials.txt
+Accounts.txt
+
+# Editor and IDE Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Generated Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Log files
+*.log
+
+# Uploaded content (keep directory structure if desired)
+# uploads/posts/*
+# !uploads/posts/.gitkeep
+# uploads/avatars/*
+# !uploads/avatars/.gitkeep

@@ -12,12 +12,12 @@ $base_url = "http://localhost/PROJECT_PIXORA_2.01/";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pixora - Unleash Your Creativity</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <link rel="manifest" href="/PROJECT_PIXORA_2.01/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#007bff">
 
 
@@ -88,7 +88,7 @@ $base_url = "http://localhost/PROJECT_PIXORA_2.01/";
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Loin</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
