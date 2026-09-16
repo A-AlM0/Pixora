@@ -50,6 +50,8 @@ Pixora is engineered to deliver a smooth, native app-like experience across all 
 - **Authentication**: Secure registration and login flows with password hashing (`password_hash` using bcrypt).
 - **Profile Customization**: Users can edit personal information, write a bio, specify hobbies, and upload custom profile avatars.
 - **Session Protection**: Safe server-side PHP session management.
+- **Upload Hardening & Optimization**: Strict MIME-type inspection via `finfo`, anti-web-shell `.htaccess` execution locks on `uploads/`, and automatic GD-based image compression.
+- **Environment Isolation**: Dynamic configuration through `.env` files preventing hardcoded credentials in version control.
 
 ### 📸 Photo Feed & Content Creation
 - **Media Uploads**: Clean upload modal and page supporting various image formats with server-side validation and unique file name generation.
@@ -83,10 +85,14 @@ Pixora is engineered to deliver a smooth, native app-like experience across all 
 
 ```bash
 Project_Pixora_2.01/
+├── .env.example                 # Environment configuration template
+├── .gitignore                   # Git ignore patterns
 ├── pixora.sql                   # Complete database dump & sample dataset
 ├── users credentials.txt        # Sample demo accounts for testing
 └── Project_Pixora_2.01/         # Application Source Code
-    ├── Database.php             # PDO database connection handler
+    ├── Database.php             # PDO database connection with .env support
+    ├── ImageHelper.php          # Upload validation & GD image compression
+    ├── .env.example             # Local environment configuration template
     ├── manifest.json            # PWA manifest configuration
     ├── service-worker.js        # Service worker for offline caching
     ├── Offline.html             # Offline fallback template
@@ -103,16 +109,17 @@ Project_Pixora_2.01/
     ├── signup.php               # Authentication: Registration
     ├── logout.php               # Session termination
     │
-    ├── upload_post.php          # Post creation handler
+    ├── upload_post.php          # Post creation handler (uses ImageHelper)
     ├── delete_post.php          # Post deletion handler
     ├── like_post.php            # AJAX like/unlike toggle
     ├── add_comment.php          # Comment submission handler
-    ├── update_avatar.php        # Profile picture uploader
+    ├── update_avatar.php        # Profile picture uploader (uses ImageHelper)
     │
     ├── pixora_API/              # RESTful API endpoints
     │   └── pixora_API/pixoradb_api/apis/json/users/users_api.php
     │
     ├── uploads/                 # Stored user media (avatars & posts)
+    │   └── .htaccess            # Security: forbids script execution in uploads
     ├── css/                     # Custom stylesheets
     ├── js/                      # Frontend JavaScript files
     └── images/                  # Static assets & logos
