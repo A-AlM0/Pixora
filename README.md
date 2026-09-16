@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="Project_Pixora_2.01/Project_Pixora_2.01/images/pixora_logo.png" alt="Pixora Logo" width="160" />
+  <img src="Project_Pixora_2.01/images/pixora_logo.png" alt="Pixora Logo" width="160" />
 
   # Pixora
   ### 📸 Modern Progressive Web App for Photo Sharing & Social Interaction
