@@ -192,7 +192,7 @@ Pixora includes internal JSON APIs for retrieving application data:
 
 ---
 
-## 👥 Team — Westsiders
+## 👥 Developers
 
 - **Ali Almalki** · [@A-AlM0](https://github.com/A-AlM0)
 - **Mohammed Ghazi**
